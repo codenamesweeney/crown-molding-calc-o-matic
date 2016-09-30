@@ -96,6 +96,7 @@ p.a {
 	background: #1a1a1a;
 	border: none;
 	border-bottom: .25rem solid #e5e600;
+	border-radius: 0;
 	color: #fff5ee;
 	font-size: 2rem;
 	font-weight: 700;
