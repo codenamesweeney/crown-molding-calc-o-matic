@@ -104,7 +104,7 @@ p.a {
 	position: absolute;
 	text-align: center;
 	top: 2rem;
-	width: 5rem !important;
+	width: 6rem !important;
 }
 input[type=number]::-webkit-inner-spin-button, 
 input[type=number]::-webkit-outer-spin-button { 
