@@ -33,7 +33,6 @@ if (typeof(Storage) !== "undefined") {
 	 		g('si').value = ss;
 			g('ss').disabled = true;
 			r('ss', 'i');
-			//r('sr', 'v');
 			a('si', 'e');
 		}
 		if (sc) {
@@ -67,25 +66,11 @@ e('fs', 'submit', function(e) {
 	ss = sv;
 	localStorage.setItem('stored_spring', sv);
 	r('ss', 'i');
-	//r('sr', 'v');
 	a('si', 'e');
 	r('xa', 'v');
 	cc();
 });
 
-// Clear spring angle from local storage and on-page display
-/*
-e('fs', 'reset', function(e) {
-	r('sr', 'i');
-	diagram(0, 0, 0);
-	g('dn').textContent = '';
-	ss = 0;
-	localStorage.removeItem('stored_spring');
-	g('ss').disabled = false;
-	r('ss', 'v');
-	g('si').focus();
-});
-*/
 // Add Corner button shows form for next corner
 
 e('ac', 'click', function(e) {
@@ -93,7 +78,6 @@ e('ac', 'click', function(e) {
 	r('xl', 'i');
 	d('co', 'i');
 	a('co', 'v');
-	//r('xn', 'v');
 	g('ci').value = 180;
 	g('ci').focus();
 	g('cs').disabled = false;
@@ -111,10 +95,6 @@ e('fc', 'submit', function(e) {
 	localStorage.setItem(nc, nv);
 	var m = cm(ss, nv);
 	var b = cb(ss, nv);
-	/*
-	var cl = g('cl').innerHTML;
-	g('cl').innerHTML = cl + '<div id="' + nc + '" class="b"><h3>Corner ' + nn + '</h3><p class="a">' + nv + '</p><p>Miter: ' + m + '&deg; | Bevel:&nbsp;' + b +'&deg;</p><a href="#diagram" onClick="diagram(' + nn +',' + m +',' + b + ');">See in Diagram</a></div>';
-	*/
 	li(nc, nn, nv, m, b);
 	// Make the current corner the last corner
 	lc = nc;
@@ -128,7 +108,6 @@ e('fc', 'submit', function(e) {
 	// Add that next corner number to the on-page form
 	g('cn').textContent = nn;
 	// Update which buttons are available
-	//r('xn', 'i');
 	r('xl', 'v');
 	r('ac', 'v');
 	d('co', 'v');
@@ -176,7 +155,6 @@ e('xa', 'click', function(e) {
 		diagram(0, 0, 0);
 		r('xa', 'i');	
 		r('xl', 'i');
-		//r('sr', 'i');
 		r('ss', 'v');
 		g('cl').innerHTML = '';
 		d('si', 'e');
@@ -360,10 +338,6 @@ function cc() {
   		ln = i;
   		var m = cm(ss, tv);
   		var b = cb(ss, tv);
-  		/*
-  		var cl = g('cl').innerHTML;
-  		g('cl').innerHTML = cl + '<div id="' + tc + '" class="b"><h3>Corner ' + i + '</h3><p class="a">' + tv + '</p><p>Miter: ' + m + '&deg; | Bevel:&nbsp;' + b +'&deg;</p><a href="#diagram" onClick="diagram(' + ln + ',' + m +',' + b + ');">See in Diagram</a></div>';
-			*/
 			li(tc, i, tv, m, b);
   	} else {
   		nc = tc;
@@ -381,10 +355,6 @@ function cc() {
 function li(xc, xn, xv, m, b) {
 	var cl = g('cl').innerHTML;
 	g('cl').innerHTML = cl + '<div id="' + xc + '" class="b"><h3>Corner ' + xn + '</h3><p class="a">' + xv + '</p><p>Miter: ' + m + '&deg; | Bevel:&nbsp;' + b +'&deg;</p><a href="#diagram" onClick="diagram(' + xn +',' + m +',' + b + ');">See in Diagram</a></div>';
-/*
-	var cl = g('cl').innerHTML;
-	g('cl').innerHTML = cl + '<div id="' + nc + '" class="b"><h3>Corner ' + nn + '</h3><p class="a">' + nv + '</p><p>Miter: ' + m + '&deg; | Bevel:&nbsp;' + b +'&deg;</p><a href="#diagram" onClick="diagram(' + nn +',' + m +',' + b + ');">See in Diagram</a></div>';
-*/
 }
 
 
