@@ -404,9 +404,6 @@ function cb(s, c) {
 	return b;
 }
 
-// Add touchstart event listener for iOS :active styles
-document.addEventListener("touchstart", function(){}, true);
-
 /* --------
 	The End
 ----------- */
