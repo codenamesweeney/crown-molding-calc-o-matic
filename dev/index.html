@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Sweeney's 10k Crown Molding Calc-o-Matic</title>
+	<link rel="stylesheet" href="all.css">
+</head>
+<body>
+		<h1><em>Sweeney&rsquo;s</em> <strong>10k</strong> Crown Molding <span>Calc-O-Matic</span></h1>
+
+		<p class="in">Record, calculate, and diagram the angles and cuts for all the corners&nbsp;in&nbsp;your&nbsp;room.</p>
+
+		<h2>Enter Your Angles</h2>
+	
+		<div class="b">
+
+			<h3>Spring Angle</h3>
+
+			<form id="fs">
+				<input id="si" type="number" value="0" min="0" max="90" name="sv">
+				<input id="ss" type="submit" value="Enter">
+			</form>
+			<p>Commonly 38&deg;/45&deg;/52&deg;</p>
+
+		</div>
+
+		<div id="cl"></div>
+
+		<div id="co" class="b v">
+
+			<h3>Corner <span id="cn"></span></h3>
+
+			<form id="fc">
+				<input id="ci" type="number" value="180" min="0" max="180" name="cv">
+				<input id="cs" type="submit" value="Enter">
+			</form>
+			<p>For radius corner transition, multiply angle by 1.5</p>
+		</div>
+
+		<a id="ac" class="i">Add Corner</a>
+
+		<a id="xl" class="i">Clear Corner</a>
+
+		<a id="xa" class="i">Clear All Angles</a>
+
+		<a id="diagram"></a>
+
+		<h2>Diagram Your Cuts</h2>
+
+		<div class="b">
+
+			<h3 id="dn"></h3>
+
+			<div id="d" class="d sb lf ic lp">
+
+				<div class="dv">
+					<span id="dv">0.0</span>&deg; bevel
+				</div>
+
+				<div class="vi">
+					<div id="vi"></div>
+				</div>
+
+				<div class="ds"></div>
+
+				<div class="bl">
+					<div id="bl"></div>
+				</div>
+
+				<div class="dw">
+					<div class="wm"></div>
+				</div>
+
+				<div class="dm">
+					<span id="dm">0.0</span>&deg; miter
+				</div>
+
+			</div>
+
+		</div>	
+
+		<div class="do">
+			<div>
+				<a id="ic" class="on">Inside Corner</a>
+				<a id="oc">Outside Corner</a>
+			</div>
+			<div>
+				<a id="lp" class="on">Left Piece</a>
+				<a id="rp">Right Piece</a>
+			</div>			
+			<div>
+				<a id="sb" class="on">Single-Bevel Saw</a>
+				<a id="db">Double-Bevel Saw</a>
+			</div>
+			<div id="df" class="i">
+				<a id="lf" class="on">Left Feed</a>
+				<a id="rf">Right Feed</a>
+			</div>
+		</div>
+
+	<p class="ft">&copy; Michael T. Sweeney</p>
+
+	<script async src="all.js"></script>
+
+</body>
+</html>

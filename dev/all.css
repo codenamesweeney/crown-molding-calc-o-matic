@@ -1,0 +1,423 @@
+html {
+	box-sizing: border-box;
+	font-size: 62.5%;
+}
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+body {
+	background: #004;
+	color: #fff;
+	font-family: 'Georgia', serif;
+	font-family: 'Garamond';
+	font-family: 'Iowan Old Style';
+	font-family: 'Californian FB';
+	font-size: 2.0rem;
+	line-height: 1.5;
+	font-weight: 400;
+	margin: 0 auto;
+	max-width: 60rem;
+	min-width: 320px;
+	padding: 6rem 1.5rem .5rem;
+}
+
+h1,
+h2,
+h3 {
+	clear: both;
+	color: #fff5ee;
+	font-weight: 400;
+	text-shadow:	1px 1px 0 #000,
+								2px 2px 0 #000,
+								3px 3px 0 #000; 
+}
+h1,
+h2 {
+	text-align: center;
+}
+h1 {
+	font-size: 4rem;
+	line-height: 1.2;
+	margin: 0 0 6rem;
+	position: relative;
+}
+h1 em {
+	display: block;
+	font-size: 3rem;
+	position: relative;
+}
+h1 span {
+	display: block;
+	white-space: nowrap;
+}
+h1 strong {
+	color: #2d2d58;
+	display: block;
+	font-size: 22rem;
+	line-height: 1;
+	margin: 0 -10%;
+	position: absolute;
+	text-shadow: none;
+	top: -4rem;
+	width: 120%;
+	z-index: -1;
+}
+h2 {
+	font-size: 2.8rem;
+	margin: 2rem 0;
+}
+h3 {
+	font-size: 2.6rem;
+	margin: 0 0 1.2rem;
+}
+a {
+	background: #1a1a1a;
+	border-bottom: .25rem solid #1a1a1a;
+	color: #fff;
+	cursor: pointer;
+	display: block;
+	margin: 1rem 0;
+	padding: .75rem 2rem .5rem;
+	text-align: center;
+	text-decoration: none;
+	transition: all .4s;
+}
+a:active,
+a:hover{
+	border-color: #e5e600;
+}
+
+input,
+p.a {
+	font-family: inherit;
+}
+input[type="number"],
+p.a {
+	background: #1a1a1a;
+	border: none;
+	border-bottom: .25rem solid #e5e600;
+	color: #fff5ee;
+	font-size: 2rem;
+	font-weight: 700;
+	line-height: 4rem !important;
+	right: 2rem;
+	position: absolute;
+	text-align: center;
+	top: 2rem;
+	width: 5rem !important;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+p {
+	font-size: 1.8rem;
+	margin: 0;
+}
+.in {
+	font-size: 2.2rem;
+	margin: 0 auto 6rem;
+	max-width: 40rem;
+	text-align: center
+}
+.ft {
+	margin: 15% 0 2rem;
+}
+#ac {
+	clear: left;
+}
+#ac/*,
+#xn*/ {
+	float: left;
+}
+#ac,
+#xa,
+#xl/*,
+#xn*/ {
+	font-size: 1.8rem;
+}
+#xl,
+#xa {
+	float: right;
+}
+.b {
+	background: #2d2d58;
+	margin: 2rem 0;
+	min-height: 12rem;
+	overflow: hidden;
+	padding: 2rem;
+	position: relative;
+}
+.b a {
+
+	margin: 1rem 0 0;
+}
+.b p {
+	width: 70%;
+}
+.bl {
+	left: 50%;
+	margin-left: -2px;
+	position: absolute;
+	top: 5rem;
+	transition: transform .2s;
+	width: 4px;
+	z-index: 200;
+}
+#bl {
+	background: #a00;
+	display: block;
+	height: 150px;
+	transition: transform .1s;
+	width: 4px;
+}
+#diagram {
+	border: none;
+	height: 0;
+	margin: 0;
+	padding: 0;
+}
+.do {
+	margin: -1rem auto 6rem;
+}
+.do div {
+	margin: 0 0 1rem;
+}
+.do div:before,
+.do div:after {
+	content: '';
+	display: table;
+}
+.do div:after {
+	clear: both;
+}
+.do a {
+	background: none;
+	border-color: #004;
+	display: block;
+	float: left;
+	font-size: 1.6rem;
+	margin: 0;
+	overflow: hidden;
+	padding: 1rem 0;
+	white-space: nowrap;
+	width: 50%;
+}
+.do a:hover,
+.do a:active {
+	border-color: #e5e600;
+}
+.do a.on {
+	background: #2d2d58;
+	border-color: #2d2d58;
+}
+.dv {
+	left: 50%;
+	margin-left: -6rem;
+	position: absolute;
+	text-align: center;
+	top: 0;
+	width: 12rem;
+}
+.d {
+	margin: 0 -25%;
+	padding: 8rem 0 14rem;
+	position: relative;
+	width: 150%;
+	z-index: 1;
+}
+.dm {
+	left: 50%;
+	margin-left: -6rem;
+	position: absolute;
+	text-align: center;
+	bottom: 0;
+	width: 12rem;
+}
+.ds {
+	background: #aaa;
+	height: 12px;
+	margin: 0 auto;
+	position: relative;
+	width: 60%;
+	z-index: 1;
+}
+.dw {
+	left: 0;
+	position: absolute;
+	transition: all .6s;
+	width: 60%;
+	z-index: 1;
+}
+.wm {
+	background: #fff;
+	border-bottom: 3px solid #dedede;
+	height: 60px;
+	position: absolute;
+	transition: transform .6s;
+	width: 100%;
+	z-index: 100;
+}
+.wm:before {
+	background: linear-gradient(to bottom,  #dedede 1%,#ffffff 35%,#ffffff 75%,#dedede 100%);
+	content: '';
+	display: block;
+	height: 36px;
+	position: absolute;
+	top: 9px;
+	width: 100%;
+}
+.wm:after {
+	background: linear-gradient(to bottom,  #dedede 1%,#ffffff 58%,#ffffff 100%);
+	bottom: 0;
+	content: '';
+	display: block;
+	height: 9px;
+	position: absolute;
+	width: 100%;
+}
+#cs,
+#ss/*,
+#sr*/ {
+	background: none;
+	border: none;
+	color: #fff;
+	font-size: 1.8rem;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	right: 2rem;
+	text-align: center;
+	top: 7.5rem;
+	width: 5rem;
+}
+#cs:hover,
+#cs:active,
+#ss:hover,
+#ss:active/*,
+#sr:hover,
+#sr:active*/ {
+	cursor: pointer;
+	color: #b3b3cc;
+}
+.vi {
+	position: absolute;
+	left: 50%;
+	margin-left: -2px;
+	overflow: visible;
+	top: 3rem;
+	transition: transform .2s;
+	width: 4px;
+	z-index: 100;
+}
+#vi {
+	background: #a00;
+	display: block;
+	height: 3rem;
+	position: absolute;
+	transform: rotateZ(0deg);
+	transition: transform .1s;
+	width: 4px;
+}
+#xa {
+	background: #2d2d58;
+	border-color: #b3b3cc;
+	display: block;
+	margin: 0 0 4rem;
+	width: 100%;
+}
+#xa:hover,
+#xa:active {
+	background: #600;
+	border-color: #fff;
+}
+/* -------------------------------
+	Diagam Options -- Single Bevel
+---------------------------------- */
+.sb.ic.rp .wm {
+	transform: rotateZ(180deg);
+}
+.sb.ic.rp .bl {
+	transform: scaleX(-1);
+}
+.sb.oc .dw {
+	transform: translate(66.66%);	
+}
+.sb.oc.lp .wm {
+	transform: rotateZ(180deg);
+}
+.sb.oc.lp .bl {
+	transform: scaleX(-1);
+}
+/* -------------------------------
+	Diagam Options -- Double Bevel
+---------------------------------- */
+.db.lf.ic.rp .wm {
+	transform: rotateZ(180deg);
+}
+.db.lf.ic.rp .bl {
+	transform: scaleX(-1);
+}
+.db.lf.oc.lp .vi {
+	transform: scaleX(-1);
+}
+.db.lf.oc.lp .bl {
+	transform: scaleX(-1);
+}
+.db.lf.oc.rp .wm {
+	transform: rotateZ(180deg);
+}
+.db.lf.oc.rp .vi {
+	transform: scaleX(-1);
+}
+.db.rf .dw {
+	transform: translate(66.66%);
+}
+.db.rf.ic.lp .vi {
+	transform: scaleX(-1);
+}
+.db.rf.ic.lp .wm {
+	transform: rotateZ(180deg);	
+}
+.db.rf.ic.rp .vi {
+	transform: scaleX(-1);
+}
+.db.rf.ic.rp .bl {
+	transform: scaleX(-1);
+}
+.db.rf.ic.rp {}
+.db.rf.oc.lp .bl {
+	transform: scaleX(-1);
+}
+.db.rf.oc.lp .wm {
+	transform: rotateZ(180deg);	
+}
+
+/* ----------------
+	Utility Classes
+------------------- */
+
+.v {
+	/* visible */
+	height: auto;
+	margin: 0 0 3rem;
+	opacity: 1;
+	position: relative;
+	transition: all .4s;
+	z-index: 10;
+}
+.i {
+	/* invisible */
+	border: none;
+	height: 0;
+	margin: 0 !important;
+	min-height: 0;
+	opacity: 0;
+	overflow: hidden;
+	padding: 0;
+	position: relative;
+	z-index: 1;
+}
