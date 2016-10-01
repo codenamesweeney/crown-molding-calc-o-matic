@@ -52,6 +52,8 @@ if (typeof(Storage) !== "undefined") {
   alert('Your web browser does not support the features of this app. Please try it in a modern browser!');
 }
 
+// Event listener for touchstart
+document.addEventListener("touchstart", function(){}, true);
 
 /* ------------------------
 	Full-Room Functionality
@@ -152,7 +154,7 @@ e('xa', 'click', function(e) {
 	var del = confirm('You\'re about to delete all the angles you\'ve entered for this room. Are you sure?')
 	if (del === true) {
 		// Reset the the page content
-		diagram(0, 0, 0);
+		diagram('', 0, 0);
 		r('xa', 'i');	
 		r('xl', 'i');
 		r('ss', 'v');

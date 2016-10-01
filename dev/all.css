@@ -6,6 +6,7 @@ html {
 *:before,
 *:after {
 	box-sizing: inherit;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 body {
 	background: #004;
@@ -136,8 +137,7 @@ p {
 #xl {
 	font-size: 1.8rem;
 }
-#xl,
-#xa {
+#xl {
 	float: right;
 }
 .b {
@@ -317,17 +317,11 @@ p {
 	width: 100%;
 }
 #xa {
-	background: #2d2d58;
-	border-color: #b3b3cc;
-	display: block;
+	float: left;
 	margin: 0 0 4rem;
 	width: 100%;
 }
-#xa:hover,
-#xa:active {
-	background: #600;
-	border-color: #fff;
-}
+
 /* -------------------------------
 	Diagam Options -- Single Bevel
 ---------------------------------- */
